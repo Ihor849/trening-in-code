@@ -1,0 +1,368 @@
+/* Основний кольір тексту   #757575 */
+/* Вторічний кольір тексту  #212121 */
+/* Колір акцент             #2196F3 */
+/* Колір тексту лінк-адрес rgba(255, 255, 255, 0.6) */
+/* Колір фону     #FFFFFF */
+/* Вторічний фон  #F5F4FA */
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --addres-link: rgba(255, 255, 255, 0.6);
+    --accent-color: #2196F3;
+    --main-background: #FFFFFF;
+    --secondary-background: #F5F4FA;
+}
+
+
+/* page-body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-background);
+    color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+   
+a {
+    text-decoration: none;
+}
+
+
+.background-header {
+background-color: chartreuse;
+
+}
+
+.logo-heder {
+display: flex;
+}
+
+.container {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    outline: 2px solid #dd0707;
+   
+}
+/* header */
+/* logo */
+
+.logonav {
+    display: flex;
+}
+
+
+
+.logo {
+    display: block;
+    
+}
+
+.headerlogo, 
+.logo-web,
+.footerlogo {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+}
+.headerlogo,
+.logo-web {
+display: inline-block;
+padding: 0;
+}
+
+.logo-web {
+    color: var(--accent-color);
+}
+
+.headerlogo {
+    color: #000000;
+}
+.footerlogo {
+    color: var(--main-background);
+    
+}
+
+/* header site-nav */
+.site-nav .navigation {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .navigation:hover, 
+.site-nav .navigation:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .navigation.current {
+    color: var(--accent-color);
+}
+
+.site-nav .item {
+    display: inline-block;
+}
+
+.auth .item {
+    display: inline-block;
+}
+ 
+/* headcontact-addres */
+.headcontact-addres {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.headcontact-addres:hover,
+.headcontact-addres:focus {
+    color: var(--accent-color);
+}
+
+/* section hero */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 280px;
+    margin-bottom: 108px;
+
+    background-color: #2F303A;
+    text-align: center;
+
+}
+
+.hero-title {
+   
+    margin-bottom: 30px;
+    padding-left: 252px;
+    padding-right: 252px;
+
+    color: var(--main-background);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;   
+    letter-spacing: 0.06em;
+}
+
+.button-hero,
+.navigation-butten {
+    cursor: pointer
+}
+
+.button-hero {
+    display: inline-block;
+    min-width: 216px;
+    padding: 10px 32px;
+    
+    background-color: var(--accent-color);
+    color: var(--main-background);
+    border-radius: 4px;
+    border-color: transparent;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em
+}
+
+.button-hero:hover, 
+.button-hero:focus {
+    background-color: #188CE8;
+    color: var(--main-background);
+}
+
+/* sections WebStudio */
+/* Чому саме ми */
+.why-are-we {
+    background-color: coral;
+    margin-bottom: 80px;
+}
+
+
+.title {
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.19;
+}
+
+.title-text {
+
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* Уявні заголовки */
+.visually-hidden {
+    position: absolute;
+     width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Чим ми займаємося */
+.work {
+    margin-bottom: 94px;
+    background-color: rgb(210, 240, 101);
+}
+
+
+
+/* Наша команда */
+.our-team {
+    padding-top: 186px;
+    padding-bottom: 94px;
+    outline: 2px solid red;
+    background-color: aqua;
+    /* background-color: var(--secondary-background); */
+    
+}
+
+.section-title {
+    margin-bottom: 50px;
+
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    
+}
+
+.photocard {
+    margin-bottom: 30px;
+}
+
+.img-title {
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.img-team {
+    background-color: var(--main-background);
+}
+
+.img-text {
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+
+/* footer */
+.footerlogo, 
+.logo-web {
+    display: inline-block;
+    padding: 0;
+}
+
+.logo-footer {
+    margin-bottom: 20px;
+}
+.footer {
+    background-color: #2F303A;
+}
+
+.address {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.footer-address {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+
+
+
+/* PORTFOLIO */
+.navigation-butten {
+    font-family: inherit;
+    background-color: var(--secondary-background);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+}
+
+.navigation-butten:focus,
+.navigation-butten:hover {
+    background-color: var(--accent-color);
+    color: var(--main-background);
+}
+
+
+ 
+.imgsection-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.desc {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+/* footercontact-addres */
+
+.footercontact-addres {
+    
+
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.footercontact {
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
+
+
+.footercontact-link {
+color: var(--addres-link);
+font-style: normal
+}
+
+.footercontact-link:hover,
+.footercontact-link:focus,
+.footercontact-addres:hover, 
+.footercontact-addres:focus
+ {
+    color: var(--accent-color);
+}
