@@ -153,7 +153,6 @@ padding: 0;
 
 /* headcontact-addres */
 .headcontact-addres {
-    
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -230,8 +229,8 @@ padding: 0;
 /* sections WebStudio */
 /* Чому саме ми */
 .why-are-we {
-    /* background-color: coral; */
     margin-bottom: 80px;
+    /* background-color: coral; */
 }
 
 .title-text {
@@ -254,11 +253,10 @@ padding: 0;
 }
 
 .about-us {
-    /* outline: 2px solid blue; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+/* outline: 2px solid blue; */
 }
 
 .about-us-text {
@@ -305,7 +303,6 @@ padding: 0;
     line-height: 1.19;
 }
 
-
 /* Наша команда */
 .our-team {
     padding-top: 186px;
@@ -314,7 +311,6 @@ padding: 0;
     background-color: var(--secondary-background);
     /* outline: 2px solid red;
     background-color: aqua; */
-    
 }
 
 .img-card {
@@ -322,9 +318,11 @@ padding: 0;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .img-team {
     width: 270px;
     margin-right: 30px;
+    background-color: var(--main-background);
 }
 
 .img-team:nth-child(4n) {
@@ -353,10 +351,6 @@ padding: 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-}
-
-.img-team {
-    background-color: var(--main-background);
 }
 
 .img-text {
@@ -395,7 +389,37 @@ padding: 0;
 
 
 /* PORTFOLIO */
+.portfolio {
+    margin-top: 94px;
+    /* background-color: aqua; */
+}
+
+.portfolio-butten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* outline: 2px solid chartreuse; */
+    
+}
+
+.portfolio-list {
+    display: block;
+    margin-right: 8px;
+}
+
+.portfolio-list:nth-child(5n) {
+margin-right: 0;
+}
+ 
+
 .navigation-butten {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-radius: 4px;
+    display: block;
+    border-color: transparent;
     font-family: inherit;
     background-color: var(--secondary-background);
     font-weight: 500;
@@ -404,15 +428,42 @@ padding: 0;
     letter-spacing: 0.03em;
 }
 
+.aii {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 .navigation-butten:focus,
 .navigation-butten:hover {
     background-color: var(--accent-color);
     color: var(--main-background);
 }
 
+.portfolio-card {
+    margin-top: 34px;
 
- 
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* text-align: center; */
+    /* outline: 2px solid black; */
+   }
+
+.img-link {
+    display: block;
+    margin-bottom: 20px;
+}
+.portfolio-img {
+    width: 370px;
+    margin-right: 30px;
+}
+
+.portfolio-img:nth-child(3n) {
+    margin-right: 0;
+}
 .imgsection-title {
+    margin-bottom: 4px;
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -421,16 +472,15 @@ padding: 0;
 }
 
 .desc {
+    margin-bottom: 30px;
+
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
 }
 
 /* footercontact-addres */
-
 .footercontact-addres {
-    
-
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     font-size: 14px;
@@ -441,7 +491,6 @@ padding: 0;
     display: inline-block;
     margin-bottom: 9px;
 }
-
 
 
 .footercontact-link {
