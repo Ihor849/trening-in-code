@@ -36,6 +36,7 @@ a {
 
 
 .background-header {
+border-bottom: 1px solid #ECECEC;
 align-items: center;
 }
 
@@ -66,10 +67,9 @@ align-items: center;
 
 
 .logo {
-    min-width: 145px;
-    min-height: 31px;
     margin-right: 93px;
-    display: block;
+    display: flex;
+    align-items: center;
     /* outline: 2px solid black; */
     
 }
@@ -85,7 +85,7 @@ line-height: 1.19;
 .headerlogo,
 .logo-web {
 display: inline-block;
-padding: 0;
+
 }
 
 .logo-web {
@@ -132,6 +132,9 @@ padding: 0;
     /* outline: 2px solid black; */
 }
 
+.site-nav .item:nth-child(3n) {
+    margin-right: 0;
+}
 .auth .item {
     display: inline-block;
     padding-top: 32px;
@@ -175,6 +178,12 @@ padding: 0;
 }
 
 /* section hero */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .hero {
     padding-top: 200px;
     padding-bottom: 280px;
@@ -229,7 +238,7 @@ padding: 0;
 /* sections WebStudio */
 /* Чому саме ми */
 .why-are-we {
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
     /* background-color: coral; */
 }
 
@@ -271,7 +280,7 @@ padding: 0;
 /* Чим ми займаємося */
 
 .work {
-    margin-bottom: 94px;
+    /* margin-bottom: 94px; */
     /* background-color: rgb(210, 240, 101); */
 }
 
@@ -305,8 +314,8 @@ padding: 0;
 
 /* Наша команда */
 .our-team {
-    padding-top: 186px;
-    padding-bottom: 94px;
+    /* padding-top: 186px;
+    padding-bottom: 94px; */
     text-align: center;
     background-color: var(--secondary-background);
     /* outline: 2px solid red;
@@ -342,6 +351,12 @@ padding: 0;
 
 .photocard {
     margin-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px 
+    rgba(0, 0, 0, 0.12), 0px 1px 1px
+    rgba(0, 0, 0, 0.14), 0px 2px 1px 
+    rgba(0, 0, 0, 0.2);
+   
 }
 
 .img-title {
@@ -361,12 +376,12 @@ padding: 0;
 
 
 /* footer */
-.footerlogo, 
+/* .footerlogo, 
 .logo-web {
     display: inline-block;
     padding-top: 24px;
     padding-bottom: 25px;
-}
+} */
 
 .logo-footer {
     margin-bottom: 20px;
@@ -390,8 +405,8 @@ padding: 0;
 
 /* PORTFOLIO */
 .portfolio {
-    margin-top: 94px;
-    /* background-color: aqua; */
+    /* margin-top: 94px;
+    background-color: aqua; */
 }
 
 .portfolio-butten {
@@ -452,6 +467,9 @@ margin-right: 0;
 .img-link {
     display: block;
     margin-bottom: 20px;
+    border: 1px solid #EEEEEE;
+    
+    
 }
 .portfolio-img {
     width: 370px;
@@ -485,22 +503,27 @@ margin-bottom: 0;
 }
 
 /* footercontact-addres */
+
 .footercontact-addres {
+
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
 }
 
-.footercontact {
-    display: inline-block;
+
+.footercontact-link {
+    color: var(--addres-link);
+    font-style: normal
+}
+
+.footercontact .item {
     margin-bottom: 9px;
 }
 
-
-.footercontact-link {
-color: var(--addres-link);
-font-style: normal
+.footercontact .item:last-child {
+    margin-bottom: 0;
 }
 
 .footercontact-link:hover,
